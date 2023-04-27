@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+#container {
+    min-height: 100vh;
+    background-image: url('images/pattern-background-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px #00000060;
+    padding-bottom: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#image-hero {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    color: var(--neutral-dark-blue);
+}
+
+#description {
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--neutral-desaturated-blue);
+    margin: 0px 25px;
+    text-align: center;
+}
+
+#card-price {
+    background-color: var(--neutral-very-pale-blue);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 25px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon-music {
+    width: 40px;
+}
+
+#price {
+    text-align: center;
+}
+
+#price :nth-child(1) {
+    color: var(--neutral-dark-blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#price :nth-child(2) {
+    color: var(--neutral-desaturated-blue);
+    font-weight: 700;
+    font-size: 12px;
+
+}
+
+#link-change {
+    color: var(--primary-bright-blue);
+    font-weight: 900;
+    font-size: 12px;
+}
+
+#link-change:hover {
+    color: var(--neutral-desaturated-blue);
+}
+
+#payment {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--primary-bright-blue);
+    color: var(--neutral-very-pale-blue);
+    font-weight: 700;
+    width: 90%;
+    padding: 10px;
+}
+
+#payment:hover {
+    cursor: pointer;
+    background-color: var(--neutral-desaturated-blue);
+}
+
+#cancel {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: var(--neutral-desaturated-blue);
+    font-weight: 700;
+}
+
+#cancel:hover {
+    cursor: pointer;
+    color: var(--neutral-dark-blue);
+    font-weight: 900;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 396px) and (max-width: 1700px) {
+    #card {
+        width: 320px;
+    }
+}
